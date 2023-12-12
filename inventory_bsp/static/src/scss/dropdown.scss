@@ -1,0 +1,49 @@
+.o_list_table {
+    position: relative; 
+
+    .o_optional_columns_dropdown_toggle_costum {
+        position: absolute;
+        right: 0; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        right: 0; 
+        top: 100%; 
+        z-index: 100; 
+        float: none;
+        min-width: 100%;
+        overflow: hidden;
+        padding: 5px 0;
+        margin: 2px 0 0; 
+        font-size: 14px; 
+        text-align: left; 
+        list-style: none;
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .25rem;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+        > li {
+            padding: 3px 20px;
+            cursor: pointer;
+    
+            input[type="checkbox"] {
+                margin-right: 10px; // Space between checkbox and label
+            }
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+        }
+
+        &.show {
+            display: block; // Show when triggered
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="pivot_summary_form" model="ir.ui.view">
+            <field name="name">pivot.summary.form</field>
+            <field name="model">pivot.summary</field>
+            <field name="arch" type="xml">
+                <form string="Pivot summary" edit="false" create="false">
+                    <sheet>
+                        <field name="kode_cabang"/>
+                        <field name="kode_barang"/>
+                        <field name="group_jenis_outlet"/>
+                        <field name="harga_gross"/>
+                        <field name="harga_jual"/>
+                        <field name="ttl_brg_terjual"/>
+                        <field name="tgl_faktur"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="pivot_summary_tree" model="ir.ui.view">
+            <field name="name">pivot.summary.tree</field>
+            <field name="model">pivot.summary</field>
+            <field name="arch" type="xml">
+                <tree string="Pivot summary" create="false" js_class="button_pivot_summary_list">
+                        <field name="kode_cabang"/>
+                        <field name="kode_barang"/>
+                        <field name="group_jenis_outlet"/>
+                        <field name="harga_gross"/>
+                        <field name="harga_jual"/>
+                        <field name="ttl_brg_terjual"/>
+                        <field name="tgl_faktur"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
